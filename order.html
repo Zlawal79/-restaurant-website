@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="order-style.css">
+</head>
+<body>
+    <div id="items-container">
+        <!-- Category 1: Burgers -->
+        <div class="category-section">
+            <h3>Burgers</h3>
+            <div class="category-items">
+                <div class="item">
+                    <h3 class="item-title">Cheeseburger</h3>
+                    <p class="item-description">A smashed beef patty with melted cheese, lettuce, tomato, and pickles - $7.99</p>
+                    <button class="add-to-cart-btn" data-item="Cheeseburger" data-price="7.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Double Burger</h3>
+                    <p class="item-description">Two juicy beef patties layered with cheese, topped with lettuce, onions, and special sauce - $9.99</p>
+                    <button class="add-to-cart-btn" data-item="Double Burger" data-price="9.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Spicy Chicken Burger</h3>
+                    <p class="item-description">Crispy fried chicken breast with spicy seasoning, lettuce, and creamy sriracha sauce - $7.49</p>
+                    <button class="add-to-cart-btn" data-item="Spicy Chicken Burger" data-price="7.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Grilled Chicken Burger</h3>
+                    <p class="item-description">Juicy grilled chicken breast with lettuce, tomato, and a hint of garlic aioli - $7.49</p>
+                    <button class="add-to-cart-btn" data-item="Grilled Chicken Burger" data-price="7.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Veggie Burger</h3>
+                    <p class="item-description">A plant-based patty with lettuce, tomato, and avocado on a whole-grain bun - $7.49</p>
+                    <button class="add-to-cart-btn" data-item="Veggie Burger" data-price="6.49">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 2: Pizza -->
+        <div class="category-section">
+            <h3>Pizza</h3>
+            <div class="category-items">
+                <div class="item">
+                    <h3 class="item-title">Cheese Pizza</h3>
+                    <p class="item-description">Classic cheese pizza with a rich tomato sauce and a blend of melted mozzarella - $9.99</p>
+                    <button class="add-to-cart-btn" data-item="Cheese Pizza" data-price="9.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Vegie Pizza</h3>
+                    <p class="item-description">Topped with bell peppers, onions, mushrooms, olives, and a sprinkle of fresh basil - $11.99</p>
+                    <button class="add-to-cart-btn" data-item="Vegie Pizza" data-price="11.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Meat Lover Pizza</h3>
+                    <p class="item-description">Loaded with pepperoni, sausage, bacon, and ham for a hearty bite in every slice - $15.99</p>
+                    <button class="add-to-cart-btn" data-item="Meat Lover Pizza" data-price="15.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Chicken Jalapeno Pizza</h3>
+                    <p class="item-description">Spicy pizza topped with grilled chicken, jalapeños, and a drizzle of ranch dressing - $13.99</p>
+                    <button class="add-to-cart-btn" data-item="Chicken Jalapeno Pizza" data-price="13.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Pepperoni Pizza</h3>
+                    <p class="item-description">Classic pepperoni pizza with mozzarella cheese and a sprinkle of oregano - $12.49</p>
+                    <button class="add-to-cart-btn" data-item="CPepperoni Pizza" data-price="12.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">BBQ Chicken Pizza</h3>
+                    <p class="item-description">Barbecue sauce base topped with grilled chicken, red onions, and cilantro - $13.99</p>
+                    <button class="add-to-cart-btn" data-item="BBQ Chicken Pizza" data-price="13.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Hawaiian Pizza</h3>
+                    <p class="item-description">A sweet and savory pizza with ham, pineapple, and mozzarella cheese - $13.99</p>
+                    <button class="add-to-cart-btn" data-item="Hawaiian Pizza" data-price="13.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 3: sides -->
+        <div class="category-section">
+            <h3>Sides</h3>
+            <div class="category-items">
+                <div class="item">
+                    <h3 class="item-title">French Fries</h3>
+                    <p class="item-description">Golden, crispy fries lightly salted, served with ketchup for dipping - $2.99</p>
+                    <button class="add-to-cart-btn" data-item="French Fries" data-price="2.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Onion Rings</h3>
+                    <p class="item-description">Crispy battered onion rings served with a side of zesty dipping sauce - $2.99</p>
+                    <button class="add-to-cart-btn" data-item="Onion Rings" data-price="2.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Mozzarella Sticks</h3>
+                    <p class="item-description">Cheesy mozzarella sticks coated in a crispy breading, served with marinara sauce - $4.49</p>
+                    <button class="add-to-cart-btn" data-item="Mozzarella Sticks" data-price="4.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Mashed Potatoes</h3>
+                    <p class="item-description">Fluffy mashed potatoes with creamy gravy on the side - $2.99</p>
+                    <button class="add-to-cart-btn" data-item="Mashed Potatoes" data-price="2.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Wings</h3>
+                    <p class="item-description">Choose from bone-in wings or boneless bites tossed in your choice of sauce: BBQ, Buffalo, or Honey Garlic - $6.99</p>
+                    <label><input type="radio" name="sauce" value="BBQ"> BBQ</label>
+                    <label><input type="radio" name="sauce" value="Buffalo"> Buffalo</label>
+                    <label><input type="radio" name="sauce" value="Honey Garlic"> Honey Garlic</label>
+                    <button class="add-to-cart-btn" data-item="Wings" data-price="6.99">Add to Cart</button>
+                </div>
+
+        
+                <div class="item">
+                    <h3 class="item-title">Boneless Bites</h3>
+                    <p class="item-description">Choose from bone-in wings or boneless bites tossed in your choice of sauce: BBQ, Buffalo, or Honey Garlic - $6.99</p>
+                    <label><input type="radio" name="sauce" value="BBQ"> BBQ</label>
+                    <label><input type="radio" name="sauce" value="Buffalo"> Buffalo</label>
+                    <label><input type="radio" name="sauce" value="Honey Garlic"> Honey Garlic</label>
+                    <button class="add-to-cart-btn" data-item="Boneless Bites" data-price="6.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 4: Loaded Fries -->
+        <div class="category-section">
+            <h3>Loaded Fries</h3>
+            <div class="category-items">
+                <div class="item">
+                    <h3 class="item-title">Poutine</h3>
+                    <p class="item-description">Classic Canadian dish with crispy fries, cheese curds, and rich brown gravy - $6.99</p>
+                    <button class="add-to-cart-btn" data-item="Poutine" data-price="6.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Taco Fries</h3>
+                    <p class="item-description">Seasoned fries topped with taco meat, cheese, salsa, and a dollop of sour cream - $9.49</p>
+                    <button class="add-to-cart-btn" data-item="Taco Fries" data-price="9.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Cheesy Jalapeño</h3>
+                    <p class="item-description">Golden fries loaded with melted cheese and spicy jalapeño slices for a kick - $6.49</p>
+                    <button class="add-to-cart-btn" data-item="Cheesy Jalapeño" data-price="6.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Chili Cheese Fries</h3>
+                    <p class="item-description">Crispy fries topped with savory chili, melted cheese, and chopped green onions - $6.99</p>
+                    <button class="add-to-cart-btn" data-item="Chili Cheese Fries" data-price="6.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 5: Drinks -->
+        <div class="category-section">
+            <h3>Drinks</h3>
+            <div class="category-items">
+                <div class="item">
+                    <h3 class="item-title">Soda</h3>
+                    <p class="item-description">Your choice of Coke, Pepsi, or Sprite served chilled over ice - $1.49</p>
+                    <button class="add-to-cart-btn" data-item="Soda" data-price="1.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Milkshake</h3>
+                    <p class="item-description">Thick and creamy milkshake available in vanilla, chocolate, or strawberry - $5.99</p>
+                    <label><input type="radio" name="flavor" value="Vanilla"> Vanilla</label>
+                    <label><input type="radio" name="flavor" value="Chocolate"> Chocolate</label>
+                    <label><input type="radio" name="flavor" value="Strawberry"> Strawberry</label>
+                    <button class="add-to-cart-btn" data-item="Milkshake" data-price="5.99">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <h3 class="item-title">Iced Tea</h3>
+                    <p class="item-description">Refreshing, brewed tea served over ice with a hint of lemon - $2.49</p>
+                    <button class="add-to-cart-btn" data-item="Iced Tea" data-price="2.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Lemonade</h3>
+                    <p class="item-description">Freshly squeezed lemonade with your choice of flavors: Peach, Strawberry, Watermelon, or Blueberry - $2.99</p>
+                    <label><input type="radio" name="flavor" value="Original">Original</label>
+                    <label><input type="radio" name="flavor" value="Peach"> Peach</label>
+                    <label><input type="radio" name="flavor" value="Strawberry"> Strawberry</label>
+                    <label><input type="radio" name="flavor" value="Watermelon"> Watermelon</label>
+                    <label><input type="radio" name="flavor" value="Blueberry"> Blueberry</label>
+                    <button class="add-to-cart-btn" data-item="Lemonade" data-price="2.99">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <h3 class="item-title">Water</h3>
+                    <p class="item-description">Bottled water - $1.00</p>
+                    <button class="add-to-cart-btn" data-item="Water" data-price="1.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 6: Desserts -->
+        <div class="category-section">
+            <h3>Desserts</h3>
+            <div class="category-items">
+                <div class="item">
+                    <h3 class="item-title">Mini Donuts</h3>
+                    <p class="item-description">A dozen warm, cinnamon-sugar dusted mini donuts, easy to eat and perfectly sweet - $4.99</p>
+                    <button class="add-to-cart-btn" data-item="Mini Donuts" data-price="4.99">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Brownie Bites</h3>
+                    <p class="item-description">Rich chocolate brownie squares with a soft, fudgy center - $3.49</p>
+                    <button class="add-to-cart-btn" data-item="Brownie Bites" data-price="3.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Cookie</h3>
+                    <p class="item-description">A soft, fresh baked chocolate chip cookie - $3.49</p>
+                    <button class="add-to-cart-btn" data-item="Cookie" data-price="3.49">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h3 class="item-title">Ice Cream Cup</h3>
+                    <p class="item-description">Single-serve cup of ice cream available in chocolate, vanilla, or strawberry - $2.99</p>
+                    <label><input type="radio" name="ice-cream-flavor" value="Chocolate"> Chocolate</label>
+                    <label><input type="radio" name="ice-cream-flavor" value="Vanilla"> Vanilla</label>
+                    <label><input type="radio" name="ice-cream-flavor" value="Strawberry"> Strawberry</label>
+                    <button class="add-to-cart-btn" data-item="Ice Cream Cup" data-price="2.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- User Info Display -->
+    <div id="user-info-display" style="display: none;">
+        <h3>Order Confirmation</h3>
+        <p id="user-name"></p>
+        <p id="user-email"></p>
+        <h4>Your Order:</h4>
+        <div id="order-details"></div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Subtotal: $<span id="subtotal-amount">0.00</span></p>
+        <p>Tax (13%): $<span id="tax-amount">0.00</span></p>
+        <p>Grand Total: $<span id="grand-total">0.00</span></p>
+        
+        <!-- Checkout Button -->
+        <button id="checkout-btn">Proceed to Checkout</button>
+
+        <!-- User Info Form -->
+        <div id="user-info" style="display: none;">
+            <h3>Enter Your Info</h3>
+            <form id="user-info-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Menu Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="menu.html" class="back-to-menu-btn" style="display: inline-block; padding: 10px 20px; background-color: #00ffff; color: #1a1a1a; text-decoration: none; border-radius: 5px; font-size: 1rem; transition: background-color 0.3s ease;">Back to Menu</a>
+    </div>
+</div>
+
+    <script src="order-script.js"></script>
+
+</body>
+</html>

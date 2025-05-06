@@ -1,0 +1,165 @@
+/* Basic Styling */
+body {
+    background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Container */
+.menu-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1 {
+    color: #ff00ff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6);
+}
+
+.menu-category h2 {
+    color: #00ff00;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menu-category h2:hover {
+    color: #ff6347;
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
+}
+
+/* Menu Categories */
+.menu-category {
+    background: linear-gradient(145deg, #333, #444);
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.6);
+}
+
+/* Menu Items */
+.menu-items {
+    display: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.menu-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    background-color: #222;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-items li:hover {
+    background-color: #ff6347;
+    transform: translateX(5px);
+}
+
+/* Item Descriptions and Prices */
+.menu-items li p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.menu-items li strong {
+    color: #00ff00;
+    font-size: 1.2rem;
+}
+
+/* Category Open State */
+.menu-category.open .menu-items {
+    display: block;
+}
+
+/* Button Styling */
+button, .order-now {
+    background-color: #ff6347;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .order-now:hover {
+    background-color: #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .menu-category h2 {
+        font-size: 2rem;
+    }
+
+    .menu-items li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Order Now Section */
+.order-now-section {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.order-now {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    font-size: 1.5em;
+    width: 200px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.order-now:hover {
+    background-color: #f05454;
+    transform: scale(1.05);
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}

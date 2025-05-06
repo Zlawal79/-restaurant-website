@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Menu</h1>
+
+        <!-- Services Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('services')">Services</h2>
+            <div class="menu-items" id="services">
+                <ul>
+                    <li>
+                        <strong>1 Hour Individual Gaming</strong> - $10.00
+                        <p class="item-description">Enjoy a solo gaming session, your own personal gaming setup</p>
+                    </li>
+                    <li>
+                      <strong>Two Player Play</strong> - $18.00
+                      <p>Enjoy playing with a friend at a discounted price for two people.</p>
+                    </li>
+                    <li>
+                      <strong>Group Play (Up to 6 People)</strong> - $45.00
+                      <p>Perfect for a group of friends or team building activities!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <!-- Burgers Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('burgers')">Burgers</h2>
+            <div class="menu-items" id="burgers">
+                <ul>
+                    <li>
+                        <strong>Cheeseburger</strong> - $7.99
+                        <p class="item-description">A smashed beef patty with melted cheese, lettuce, tomato, and pickles.</p>
+                    </li>
+                    <li>
+                      <strong>Double Burger</strong> - $9.99
+                      <p>Two juicy beef patties layered with cheese, topped with lettuce, onions, and special sauce.</p>
+                    </li>
+                    <li>
+                      <strong>Spicy Chicken Burger</strong> - $7.49
+                      <p>Crispy fried chicken breast with spicy seasoning, lettuce, and creamy sriracha sauce.</p>
+                    </li>
+                    <li>
+                      <strong>Grilled Chicken Burger</strong> - $7.49
+                      <p>Juicy grilled chicken breast with lettuce, tomato, and a hint of garlic aioli.</p>
+                    </li>
+                    <li>
+                      <strong>Veggie Burger</strong> - $6.49
+                      <p class="item-description">A plant-based patty with lettuce, tomato, and avocado on a whole-grain bun.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pizzas Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('pizzas')">Pizzas</h2>
+            <div class="menu-items" id="pizzas">
+                <ul>
+                    <li>
+                        <strong>Cheese Pizza</strong> - $9.99
+                        <p class="item-description">Classic cheese pizza with a rich tomato sauce and a blend of melted mozzarella.</p>
+                    </li>
+                    <li>
+                        <strong>Vegie Pizza</strong> - $11.99
+                        <p class="item-description">Topped with bell peppers, onions, mushrooms, olives, and a sprinkle of fresh basil.</p>
+                    </li>
+                    <li>                       
+                        <strong>Meat Lover Pizza</strong> - $15.99
+                        <p class="item-description">Loaded with pepperoni, sausage, bacon, and ham for a hearty bite in every slice.</p>
+                    </li>
+                    <li>                       
+                        <strong>Chicken Jalapeno Pizza</strong> - $13.99
+                        <p class="item-description">Spicy pizza topped with grilled chicken, jalapeños, and a drizzle of ranch dressing.</p>
+                    </li>
+                    <li>
+                      <strong>Pepperoni Pizza</strong> - $12.49
+                      <p>Classic pepperoni pizza with mozzarella cheese and a sprinkle of oregano.</p>
+                    </li>
+                    <li>
+                      <strong>BBQ Chicken Pizza</strong> - $13.99
+                      <p>Barbecue sauce base topped with grilled chicken, red onions, and cilantro.</p>
+                    </li>
+                    <li>
+                      <strong>Hawaiian Pizza</strong> - $13.99
+                      <p>A sweet and savory pizza with ham, pineapple, and mozzarella cheese.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sides Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('sides')">Sides</h2>
+            <div class="menu-items" id="sides">
+                <ul>
+                    <li>                        
+                        <strong>French Fries</strong> - $2.99
+                        <p class="item-description">Golden, crispy fries lightly salted, served with ketchup for dipping.</p>
+                    </li>
+                    <li>
+                      <strong>Onion Rings</strong> - $2.99
+                      <p>Crispy battered onion rings served with a side of zesty dipping sauce.</p>
+                    </li>
+                    <li>
+                      <strong>Mozzarella Sticks</strong> - $4.49
+                      <p>Cheesy mozzarella sticks coated in a crispy breading, served with marinara sauce.</p>
+                    </li>
+                    <li>
+                      <strong>Mashed Potatoes</strong> - $2.99
+                      <p>Fluffy mashed potatoes with creamy gravy on the side.</p>
+                    </li>
+                    <li>
+                      <strong>Wings/Boneless Bites</strong> - $6.99
+                      <p>Choose from bone-in wings or boneless bites tossed in your choice of sauce: BBQ, Buffalo, or Honey Garlic.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Loaded Fries Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('loadedFries')">Loaded Fries</h2>
+            <div class="menu-items" id="loadedFries">
+                <ul>
+                    <li>
+                      <strong>Poutine</strong> - $6.99
+                      <p>Classic Canadian dish with crispy fries, cheese curds, and rich brown gravy.</p>
+                    </li>
+                    <li>
+                      <strong>Taco Fries</strong> - $9.49
+                      <p>Seasoned fries topped with taco meat, cheese, salsa, and a dollop of sour cream.</p>
+                    </li>
+                    <li>
+                      <strong>Cheesy Jalapeño</strong> - $6.49
+                      <p>Golden fries loaded with melted cheese and spicy jalapeño slices for a kick.</p>
+                    </li>
+                    <li>
+                      <strong>Chili Cheese Fries</strong> - $6.99
+                      <p>Crispy fries topped with savory chili, melted cheese, and chopped green onions.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Drinks Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('drinks')">Drinks</h2>
+            <div class="menu-items" id="drinks">
+                <ul>
+                    <li>
+                      <strong>Soda</strong> - $1.49
+                      <p>Your choice of Coke, Pepsi, or Sprite served chilled over ice.</p>
+                    </li>
+                    <li>
+                      <strong>Milkshake</strong> - $5.99
+                      <p>Thick and creamy milkshake available in vanilla, chocolate, or strawberry.</p>
+                    </li>
+                    <li>
+                      <strong>Iced Tea</strong> - $2.49
+                      <p>Refreshing, brewed tea served over ice with a hint of lemon.</p>
+                    </li>
+                    <li>
+                      <strong>Lemonade</strong> - $2.99
+                      <p>Freshly squeezed lemonade with your choice of flavors: Peach, Strawberry, Watermelon, or Blueberry.</p>
+                    </li>
+                    <li>
+                      <strong>Water</strong> - $1.00
+                      <p>Bottled water</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desserts Category -->
+        <div class="menu-category">
+            <h2 onclick="toggleMenu('desserts')">Desserts</h2>
+            <div class="menu-items" id="desserts">
+                <ul>
+                    <li>
+                      <strong>Mini Donuts</strong> - $4.99
+                      <p>A dozen warm, cinnamon-sugar dusted mini donuts, easy to eat and perfectly sweet.</p>
+                    </li>
+                    <li>
+                      <strong>Brownie Bites</strong> - $3.49
+                      <p>Rich chocolate brownie squares with a soft, fudgy center.</p>
+                    </li>
+                    <li>
+                      <strong>Cookie</strong> - $3.49
+                      <p>A soft, fresh baked chocolate chip cookie</p>
+                    </li>
+                    <li>
+                      <strong>Ice Cream Cup</strong> - $2.99
+                      <p>Single-serve cup of ice cream available in chocolate, vanilla, or strawberry.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Order Now Button -->
+        <div class="order-now-section" style="text-align: center; margin-top: 20px;">
+            <button class="order-now" onclick="openOrderPage()">Order Now</button>
+            <a href="homepage.html" class="order-now" style="margin-left: 10px; display: inline-block; text-decoration: none;">Return to Main Page</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

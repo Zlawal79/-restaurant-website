@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber/Gaming Cafe Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bangers&family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Updated to match second page style */
+            background-color: #1a1a1a; /* Dark grey background */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a; /* Dark background to match second page */
+            text-align: center;
+            padding: 40px 10%;
+        }
+
+        header h1 {
+            font-family: 'Press Start 2P', cursive; /* Pixel font for gaming feel */
+            font-size: 4rem; /* Larger font size */
+            color: #00ffff; /* Neon blue */
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.7), 0 0 15px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+        }
+
+        form {
+            background: #333;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="date"],
+        form input[type="time"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00ffff; /* Neon blue border */
+            border-radius: 5px;
+            background-color: #444; /* Dark background for inputs */
+            color: #fff; /* White text */
+        }
+
+        form input[type="submit"] {
+            background: #00ffff; /* Neon blue */
+            color: #1a1a1a; /* Dark text */
+            border: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        form input[type="submit"]:hover {
+            background: #008080; /* Darker teal on hover */
+        }
+
+        .container {
+            padding: 40px 10%;
+        }
+
+        .thank-you-message {
+            display: none;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .thank-you-message h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: #00ffff;
+            text-shadow: 0 0 8px rgba(0, 255, 255, 0.7), 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        .thank-you-message p {
+            font-family: 'Press Start 2P', cursive;
+            color: #888;
+        }
+
+        .return-btn {
+            background: #00ffff;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .return-btn:hover {
+            background: #008080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cyber/Gaming Cafe Booking</h1>
+    </header>
+    <div class="container">
+        <form action="#" method="post">
+            <h2>Booking Form</h2>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div>
+                <label for="duration">Duration (hours):</label>
+                <input type="text" id="duration" name="duration" required>
+            </div>
+            <div>
+                <input type="submit" value="Book Now">
+            </div>
+        </form>
+
+        <div id="thank-you-message" class="thank-you-message">
+            <h2>Thank You for Your Booking!</h2>
+            <p>Your booking has been successfully submitted. We look forward to seeing you!</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="homepage.html" class="return-btn">Return to Main Menu</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                document.querySelector('.container').style.display = 'none';
+                document.getElementById('thank-you-message').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
